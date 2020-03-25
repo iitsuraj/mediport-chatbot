@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Apollo chat bot</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- Tooltip CSS -->
+    <link rel="stylesheet" href="vendors/tooltip/balloon.min.css">
+    <!-- Icon CSS-->
+    <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Check-button CSS-->
+    <link rel="stylesheet" href="vendors/calendar/dcalendar.picker.css">
+    <!-- Calendar CSS-->
+    <link rel="stylesheet" href="vendors/check-button/jqflipswitch.default.style.css">
+
+    <!--Theme Styles CSS-->
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <style>
+        .col {
+            padding: 0 !important;
+        }
+
+        .messages_area {
+            padding: 0 !important;
+        }
+
+        .messages_area .messages_row {
+            width: 100% !important;
+        }
+
+        .messages_area .messages_row .all_messages .type_messages {
+            padding: 10px 0px;
+        }
+
+        .messages_area .messages_row .all_messages .type_messages .input-field input {
+            margin: 0;
+            outline: none;
+            resize: none;
+            border: 0;
+            box-shadow: none;
+            font: 400 15px/40px "Lato", sans-serif;
+            color: #beced7;
+            width: 80%;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Messages Area -->
+    <section class="messages_area">
+        <div class="messages_row row">
+            <div class="col s12">
+                <div id="messages-1" class="col s12 all_messages">
+                    <div class="media profile" style="position: fixed;
+                    width: 100%;
+                    top: 0;z-index: 100;">
+                        <img src="images/profile-7.jpg" alt="" class="circle responsive-img">
+                        <div class="media_body">
+                            <a href="#">Dan Fisher</a>
+                            <p>Acting is just a way of making a living, the family is life.</p>
+                        </div>
+                    </div>
+                    <div class="msg" style="padding-top: 8rem;
+                    padding-bottom: 8rem;">
+
+                        <div class="messages_date">
+                            <h4>March 24, 2020</h4>
+                        </div>
+                        <div class="sms">
+                            <p>Hey Masum, How about you?</p>
+                            <h6>5:27 pm</h6>
+                        </div>
+                        <div class="sms_right">
+                            <p>Hey Masum, How about you?</p>
+                            <h6>5:27 pm</h6>
+                        </div>
+                        <div class="sms">
+                            <p>Yeah what’s the matter? You know I’m kinda busy with my new <br>upcoming Equalizer 2,
+                                spending all the time in Hollywood.</p>
+                        </div>
+                        <div class="sms">
+                            <p> So tell me what’s exciting? What’s going on?</p>
+                            <h6>5:28 pm</h6>
+                        </div>
+                        <div class="messages_date md_2">
+                            <h4>March 25, 2020</h4>
+                        </div>
+
+                        <div class="sms_right">
+                            <p>Ah got it...</p>
+                            <h6>5:29 pm</h6>
+                        </div>
+                        <div class="sms_right">
+                            <p>Actually nothing so important.. OK it’s important. I heard you were <br>looking for a new
+                                villain for Equalizer 2. May be I’m a good fit for this.</p>
+
+                        </div>
+                        <div class="sms_right">
+                            <p>You know what? I can give good dialogue delivery like Samuel L. Jackson <br>and, and nice
+                                expressions like Di Caprio.</p>
+                            <h6>5:30 pm</h6>
+                        </div>
+                    </div>
+                    <div class="type_messages" style="bottom: 0;
+                    position: fixed;
+                    width: 100%;
+                    background: #fff;z-index: 100;">
+                        <div class="input-field">
+                            <!-- <textarea placeholder="Type something & press enter"></textarea> -->
+                            <input type="text" placeholder="Type something & press enter">
+                            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Messages Area -->
+    <!-- jQuery JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="js/materialize.min.js"></script>
+    <!-- Theme JS -->
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
