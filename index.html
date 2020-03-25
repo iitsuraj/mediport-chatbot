@@ -12,17 +12,8 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="css/materialize.min.css">
-    <!-- Tooltip CSS -->
-    <link rel="stylesheet" href="vendors/tooltip/balloon.min.css">
-    <!-- Icon CSS-->
-    <link rel="stylesheet" href="vendors/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Check-button CSS-->
-    <link rel="stylesheet" href="vendors/calendar/dcalendar.picker.css">
-    <!-- Calendar CSS-->
-    <link rel="stylesheet" href="vendors/check-button/jqflipswitch.default.style.css">
-
     <!--Theme Styles CSS-->
     <link rel="stylesheet" href="css/style.css" media="all" />
     <style>
@@ -50,8 +41,20 @@
             box-shadow: none;
             font: 400 15px/40px "Lato", sans-serif;
             color: #beced7;
-            width: 80%;
+            width: 90%;
             padding-left: 10px;
+        }
+
+        @media (max-width: 885px) {
+            .messages_area .messages_row .all_messages .type_messages .input-field input {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 475px) {
+            .messages_area .messages_row .all_messages .type_messages .input-field input {
+                width: 70%;
+            }
         }
     </style>
 </head>
@@ -119,8 +122,8 @@
                         <div class="input-field">
                             <!-- <textarea placeholder="Type something & press enter"></textarea> -->
                             <input type="text" placeholder="Type something & press enter">
-                            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
-                                <i class="material-icons right">send</i>
+                            <button class="btn waves-effect waves-light red" type="submit"><i
+                                    class="material-icons">send</i>
                             </button>
                         </div>
                     </div>
